@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>JavaScript30 NavBar</title>
+    </head>
+    <body>
+            <div>
+                <!-- Navbar -->
+                <nav>
+                    <div class="navbar">
+                        <img src="./Assets/Logo.svg" alt="Logo" />
+                        <img id="menu-mobile-btn" src="./Assets/Menu.svg" alt="Menu Mobile Button " />
+                        <ul id="menu">
+                            <li>Products</li>
+                            <li>Challenges</li>
+                            <li>Resources</li>
+                            <li>Other Links</li>
+                        </ul>
+                        <div id="menu-cta">
+                            <p>Sign in</p>
+                            <button class="menu-cta-hero-btn">Try for free</button>
+                        </div>
+                    </div>
+                    <div id="menu-mobile" class="menu-mobile-transition">
+                        <ul class="menu-mobile-items">
+                            <li class="menu-mobile-item">Products</li>
+                            <li class="menu-mobile-item">Challenges</li>
+                            <li class="menu-mobile-item">Resources</li>
+                            <li class="menu-mobile-item">Other Links</li>
+                        </ul>
+
+                        <div class="mobile-menu-cta">
+                            <p>Sign in</p>
+                            <button class="hero-btn">Try for free</button>
+                        </div>
+                    </div>
+                </nav>
+                <main>
+                <!-- Hero -->
+                <div class="hero">
+                    <div class="left-hero">
+                        <h1 class="hero-text">
+                            Ondeck is your remote
+                            <span class="hero-text-span">
+                                conference calling tool
+                            </span>
+                        </h1>
+                        <h3 class="hero-subtext">
+                            Ondeck is a service that allows you to create
+                            beautiful, online, and encrypted video calls for you
+                            and your remote team.
+                        </h3>
+                        <button class="hero-btn">Try for free</button>
+                        <div class="rating">
+                            <p>5.0 Rating based on reviews from:</p>
+                            <div class="rating-logo">
+                                <img
+                                    class="rating-company"
+                                    src="./Assets/AlternativeTo Logo.svg"
+                                    alt="AlternativeTo Logo"
+                                /><img
+                                    class="rating-company"
+                                    src="/Assets/Capterra Logo.svg"
+                                    alt="Capterra Logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <img
+                            class="hero-img"
+                            src="./Assets/Hero Image.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <!-- Testimonials -->
+                <div class="testimonial">
+                    <h3 class="testimonial-text">
+                        Trusted by 3+ million people at companies like
+                    </h3>
+                    <div class="companies">
+                        <img
+                            class="companies-logo"
+                            src="./Assets/Netflix Logo.svg"
+                            alt="Netflix Logo"
+                        /><img
+                            class="companies-logo"
+                            src="./Assets/Shopify Logo.svg"
+                            alt="Shopify Logo"
+                        /><img
+                            class="companies-logo"
+                            src="./Assets/Spotify Logo.svg"
+                            alt="Spotify Logo"
+                        /><img
+                            class="companies-logo"
+                            src="./Assets/Walmart Logo.svg"
+                            alt="Walmart Logo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3ede5;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+}
+
+/* Menu mobile */
+#menu-mobile {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eae0d2;
+    display: none;
+}
+
+.menu-mobile-transition {
+    transition: height 0.5s ease, width 0.5s ease;
+}
+
+.menu-mobile-items {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.menu-mobile-item {
+    padding: 1em;
+    font-size: 1.5rem;
+    color: #6c6c6c;
+    border-bottom: 1px solid #d8c4aa;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.menu-mobile-item:hover {
+    background-color: white;
+}
+
+.mobile-menu-cta {
+    text-align: center;
+}
+
+.mobile-menu-cta p {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: #6c6c6c;
+}
+
+#menu,
+#menu-cta {
+    display: none;
+}
+
+/* Hero */
+
+.hero {
+    padding: 1em 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.hero-text {
+    min-width: 350px;
+    margin-bottom: 0.5em;
+    font-size: 3rem;
+}
+
+.hero-text-span {
+    color: #ffa500;
+}
+
+.hero-subtext {
+    font-weight: 400;
+    color: #797373;
+    margin-bottom: 1em;
+    min-width: 350px;
+}
+
+.hero-btn {
+    background-color: #004400;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+    transition: ease-in-out 250ms;
+}
+
+.hero-btn:hover {
+    background-color: #009f00;
+    transition: ease-in-out 250ms;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #797373;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.rating-logo {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.rating-company {
+    padding: 0 0.3em;
+}
+
+.hero-img {
+    display: none;
+}
+
+/* Testimonial */
+
+.testimonial {
+    padding: 1em 1.5em;
+    color: #797373;
+}
+
+.testimonial-text {
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies-logo {
+    padding: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        margin: 5em auto;
+    }
+
+    .rating {
+        max-width: 400px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 100vh;
+    }
+
+    .hero {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .rating {
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .left-hero {
+        margin-right: 1em;
+        width: 65%;
+    }
+
+    .right-hero {
+        width: 35%;
+    }
+
+    .hero-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu-mobile-btn,
+    #menu-mobile {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu li {
+        list-style-type: none;
+        color: #6c6c6c;
+        cursor: pointer;
+        padding: 0.5em;
+    }
+
+    #menu li:hover {
+        border-bottom: 2px solid #ffa500;
+    }
+
+    #menu li:not(:last-child) {
+        margin-right: 2em;
+    }
+
+    #menu-cta {
+        color: #6c6c6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-cta p {
+        margin-right: 1.5em;
+        cursor: pointer;
+        transition: ease-in-out 0.5s;
+    }
+
+    #menu-cta p:hover {
+        transform: scale(1.1);
+        transition: ease-in-out 0.5s;
+    }
+
+    .menu-cta-hero-btn {
+        background-color: #004400;
+        color: white;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 1em 2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: ease-in-out 250ms;
+    }
+
+    .menu-cta-hero-btn:hover {
+        background-color: #009f00;
+        transition: ease-in-out 250ms;
+    }
+}
